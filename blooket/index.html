@@ -14,7 +14,16 @@
       <label for="gameID">Game ID:</label>
       <input type="text" id="gameID" name="gameID" required><br><br>
 
-      <input type="submit" value="Start Flooding">
+      <input type="submit" onclick=value="Start Flooding">
+      <script>
+      function startflood(){
+        window.location.href = 'https://play.blooket.com/play';
+        window.onload = function() {
+        document.querySelector('input._idInput_1mkqb_63').value = 'YOUR_GAME_ID';
+        document.querySelector('div._joinButton_1mkqb_87').click();
+      };
+      }
+      </script>
     </form>
   </body>
 </html>
