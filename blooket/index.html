@@ -1,6 +1,20 @@
 <html>
-  <head><title>Blooket Game Flooder</title></head>
+  <head>
+    <title>Blooket Game Flooder</title>
+  </head>
   <body>
-    
+    <h2>Blooket Game Flooder</h2>
+    <form action="start_flooding.php" method="POST">
+      <label for="botPrefix">Bot Prefix:</label>
+      <input type="text" id="botPrefix" name="botPrefix" required><br><br>
+
+      <label for="amountOfBots">Amount of Bots (1-100):</label>
+      <input type="number" id="amountOfBots" name="amountOfBots" min="1" max="100" required><br><br>
+
+      <label for="gameID">Game ID:</label>
+      <input type="text" id="gameID" name="gameID" required><br><br>
+
+      <input type="submit" value="Start Flooding">
+    </form>
   </body>
 </html>
